@@ -1,0 +1,30 @@
+ <!-- index.ejs -->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Washington College Net Price Calculator</title>
+    </head>
+    <body>
+        <%= htmlWebpackPlugin.files.webpackManifest %>
+        <section id="app" class="container">
+            <section class="columns">
+                <div class="column col-6 col-xs-12 centered">
+                    <div class="panel">
+                        <div class="panel-header text-center">
+                            <div class="panel-title">Washington College Net Price Calculator</div>
+                        </div>
+                        <div class="panel-body">
+                            <calculator></calculator>
+                        </div>
+                        <div class="panel-footer">
+                            <slot name="panel-footer"></slot>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
